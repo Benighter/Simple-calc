@@ -1,31 +1,3 @@
-// let screen = document.querySelector(".screen");
-// let buttons = document.querySelectorAll(".btn");
-// let clear = document.querySelector(".btn-clear");
-// let equal = document.querySelector(".equal");
-
-
-// function buttonCLick(buttons) {
-//     buttons.addEventListener('click', function(e){
-//         let value = e.target.dataset.num;
-//         screen.value += value;
-//     });
-// };
-
-
-
-// buttons.forEach(button => {
-//     buttonCLick(button)
-// });
-
-
-// equal.addEventListener('click', function(e) {
-//     try {
-//         screen.value = eval(screen.value); 
-//     } catch {
-//         screen.value = "Error";
-//     }
-// });
-
 (function() {
     let screen = document.querySelector(".screen");
     let buttons = document.querySelectorAll(".btn");
@@ -36,6 +8,7 @@
     buttons.addEventListener('click', function(e){
         let value = e.target.dataset.num
         screen.value += value;
+        
     })
    });
 
@@ -52,4 +25,4 @@
         screen.value = ""
    })
 
-})()
+})();
