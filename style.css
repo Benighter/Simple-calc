@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app {
+    background-color: rgb(183, 182, 182);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 2px 1px 5px #11afed33;
+}
+
+.screen{
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    border: none;
+    background-color: rgb(203, 203, 203);
+    text-align: right;
+    pointer-events: none;
+}
+
+.functionality{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.functionality button {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+.functionality button:hover {
+    color: lightblue;
+
+}
+
+.btn-clear {
+    background-color: red;
+    color: white;
+}
+
+.btn-equal {
+    background-color: orange;
+    color: white;
+}
