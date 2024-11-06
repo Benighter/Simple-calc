@@ -13,47 +13,50 @@ body {
 }
 
 .app {
-    background-color: rgb(183, 182, 182);
-    padding: 2rem;
-    border-radius: 1rem;
-    box-shadow: 2px 1px 5px #11afed33;
+ background-color: rgba(27, 1, 1, 0.362);
+ padding: 1.5rem;
+ border-radius: .5rem;
 }
 
-.screen{
+.form input{
     width: 100%;
     padding: 1rem;
-    border-radius: .5rem;
-    margin: 1rem 0;
-    border: none;
-    background-color: rgb(203, 203, 203);
     text-align: right;
+    font-size: 2rem;
     pointer-events: none;
+    margin: 1rem 0;
 }
 
 .functionality{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: .5rem;
+    gap: 1rem;
 }
 
 .functionality button {
     padding: 1rem;
-    border-radius: 1rem;
     border: none;
     cursor: pointer;
 }
 
-.functionality button:hover {
-    color: lightblue;
 
+.functionality > .equal-btn {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
 }
 
-.btn-clear {
-    background-color: red;
+.clear-btn {
+    background-color: blue;
     color: white;
 }
 
-.btn-equal {
-    background-color: orange;
+.backspace-btn {
+    background-color: blue;
+    color: white;
+}
+
+.operator-btn {
+    background-color: blue;
     color: white;
 }
